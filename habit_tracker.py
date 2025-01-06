@@ -1,3 +1,5 @@
+from termcolor import colored  # Importing termcolor for colored output
+
 class Habit:
     def __init__(self, name):
         self.name = name
@@ -7,7 +9,10 @@ class Habit:
         self.done = True
     
     def __str__(self):
-        return f"{self.name} - {'Done' if self.done else 'Not done'}"
+        # Modify the __str__ method to display habit status with color
+        status = 'Done' if self.done else 'Not done'
+        color = 'green' if self.done else 'red'
+        return colored(f"{self.name} - {status}", color)
 
 
 class HabitTracker:
@@ -15,13 +20,13 @@ class HabitTracker:
         self.habits = []
     
     def add_habit(self, habit_name):
-        # Добавляем новую привычку
+        # Add a new habit
         habit = Habit(habit_name)
         self.habits.append(habit)
         print(f"Added habit: {habit_name}")
     
     def mark_done(self, habit_name):
-        # Отмечаем привычку как выполненную
+        # Mark a habit as done
         for habit in self.habits:
             if habit.name == habit_name:
                 habit.mark_done()
@@ -31,7 +36,7 @@ class HabitTracker:
             print(f"Habit '{habit_name}' not found.")
     
     def delete_habit(self, habit_name):
-        # Удаляем привычку
+        # Delete a habit
         for habit in self.habits:
             if habit.name == habit_name:
                 self.habits.remove(habit)
@@ -41,17 +46,17 @@ class HabitTracker:
             print(f"Habit '{habit_name}' not found.")
     
     def list_habits(self):
-        # Показываем все привычки
+        # List all habits
         if not self.habits:
             print("No habits added yet.")
         else:
             print("\nYour habits:")
             for habit in self.habits:
-                print(habit)
-            print("")  # Пустая строка для улучшения читаемости
+                print(habit)  # Now habits will be printed with colors
+            print("")  # Empty line for better readability
 
 
-# Интерфейс команд
+# Command-line interface
 def main():
     tracker = HabitTracker()
     print("Welcome to the Daily Habit Tracker!")
