@@ -20,7 +20,7 @@ To use this project, you need Python 3.x installed on your computer.
 
 3. Run the program:
     ```bash
-    python main.py
+    python habit_tracker.py
     ```
 
 ## Usage
