@@ -1,0 +1,39 @@
+Testing Documentation
+Test Plan
+We want to make sure everything in the app works as expected, so we'll be testing these main commands:
+
+add <habit_name>: Add a new habit to your list.
+done <habit_name>: Mark a habit as done for the day.
+delete <habit_name>: Remove a habit from the list.
+list: See all your habits with their statuses.
+exit: Close the app when you're done.
+Testing Method: We'll do manual testing — just running through the commands and checking everything works as it should. If something doesn’t go as expected, we'll note it down.
+
+Testing Report
+Here’s how each of the commands tested out:
+
+add <habit_name>:
+
+Test: Try adding a new habit, like add Exercise.
+What we expected: The habit gets added to the list, and the app confirms it.
+What happened: The habit was added successfully, and the app showed the message: "Added habit: Exercise." ✅
+done <habit_name>:
+
+Test: Mark a habit as done, like done Exercise.
+What we expected: The habit gets marked as done, and its status changes to "done".
+What happened: The habit's status turned to "done" (green color). The app showed: "Marked 'Exercise' as done." 👍
+delete <habit_name>:
+
+Test: Try deleting a habit, like delete Exercise.
+What we expected: The habit gets removed from the list, and we get a confirmation.
+What happened: The habit was deleted, and the app showed: "Deleted habit: Exercise." 🗑️
+list:
+
+Test: Check the list of all habits.
+What we expected: A neat list of habits and their statuses.
+What happened: All habits were displayed correctly with their statuses.
+exit:
+
+Test: Exit the app when you're done.
+What we expected: The app should close without issues.
+What happened: The app shut down nicely. 👋
