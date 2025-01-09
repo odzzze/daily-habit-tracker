@@ -61,9 +61,9 @@ We kept it simple because, honestly, that’s all you need:
 
 ## Team Members  
 We’re a small but mighty team:  
-- **Azat**: The fearless team leader who kept us on track.  
-- **Ibragim**: Tested everything like a pro and caught the sneaky bugs.  
-- **Said**: Wrote this documentation and helped make the app shine.  
+- **Azat Odeyev**: The fearless team leader who kept us on track.  
+- **Ibragim Tsutsayev**: Tested everything like a pro and caught the sneaky bugs.  
+- **Said-Rakhman Tataev**: Wrote this documentation and helped make the app shine.  
 
 ## Screenshots/Demo  
 (We’ll add screenshots here soon. Imagine something awesome for now!)  
